@@ -5,7 +5,8 @@ import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.examples.constants.HomeConstants;
 import com.crowdar.examples.services.HomeService;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
 
 /**
  * This class handles the steps in the features files and connects with the service in case of having business logic.
@@ -13,19 +14,43 @@ import cucumber.api.java.en.When;
  */
 public class HomeSteps extends PageSteps {
 
+    @io.cucumber.java.en.When("The user clicks on the Hamburger Menu")
+    public void theUserClicksOnTheHamburgerMenu() {
+    }
+
+
+    @When("The user clicks on the project")
+    public void theUserClicksOnTheProject() {
+    }
+
+    @And("The user clicks on settings")
+    public void theUserClicksOnSettings() {
+    }
+
+    @And("The user clicks on tap enable dark mode")
+    public void theUserClicksOnTapEnableDarkMode() {
+    }
+
+    @And("The user clicks on Tasks")
+    public void theUserClicksOnTasks() {
+    }
+
+    @And("The user uploads a task")
+    public void theUserUploadsATask() {
+    }
+
+    @io.cucumber.java.en.Then("The user verifies that the profile goes into dark mode")
+    public void theUserVerifiesThatTheProfileGoesIntoDarkMode() {
+    }
+
+    @io.cucumber.java.en.Then("The user verifies that this task was loaded correctly")
+    public void theUserVerifiesThatThisTaskWasLoadedCorrectly() {
+    }
+
     @Then("Home page is displayed")
     public void isHomePageVisible() {
         HomeService.isViewLoaded();
     }
 
-    @When("The user changes the language")
-    public void doChangeLanguage() {
-        MobileActionManager.click(HomeConstants.CHANGE_LANGUAGE_BUTTON_LOCATOR);
-    }
-
-    @When("The user log out of the app")
-    public void doSignOut() {
-        MobileActionManager.click(HomeConstants.SIGN_OUT_BUTTON_LOCATOR);
-    }
 
 }
