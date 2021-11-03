@@ -2,10 +2,10 @@ package com.crowdar.examples.constants;
 
 public class LoginConstants {
 
-    public static final String EMAIL_INPUT = "id:emailAddressInput";
-    public static final String PASSWORD_INPUT = "id:passwordInput";
-    public static final String LOG_IN_BUTTON = "id:loginButton";
-    public static final String LOG_IN_TEXT = "xpath://android.widget.TextView[@content-desc=\'Login headline\']]";
+    public static final String EMAIL_INPUT = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.TextView";
+    public static final String PASSWORD_INPUT = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText";
+    public static final String LOG_IN_BUTTON = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/android.widget.Button[1]";
+    public static final String LOG_IN_TEXT = "id:me.clockify.android:id/textView9";
     public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Login page is not displayed.";
 
 }
