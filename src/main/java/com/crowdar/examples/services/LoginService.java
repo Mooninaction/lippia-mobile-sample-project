@@ -18,6 +18,6 @@ public class LoginService {
     }
 
     public static void isViewLoaded(){
-       Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
+        Assert.assertTrue(MobileActionManager.isVisible(LoginConstants.EMAIL_INPUT), LoginConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }
 }

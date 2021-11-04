@@ -16,7 +16,7 @@ import io.cucumber.java.en.When;
 public class LoginSteps extends PageSteps {
 
     @Given("The app is loaded correctly")
-    public void  isLoginPageVisible() {
+    public void  isLoginPageVisible(){
         LoginService.isViewLoaded();
     }
 
