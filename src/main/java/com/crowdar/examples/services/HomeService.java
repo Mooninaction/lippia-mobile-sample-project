@@ -43,7 +43,7 @@ public class HomeService {
     public static void TaskLoaded(){
         MobileActionManager.isVisible(HomeConstants.TASKS_OPTION);
         String task = MobileActionManager.getElement(HomeConstants.TASKS_LOADED).getText();
-        Assert.assertTrue(task == HomeConstants.TASKS_TEXT);
+        Assert.assertSame(HomeConstants.TASKS_TEXT, task);
     }
 
 
