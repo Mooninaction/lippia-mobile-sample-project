@@ -12,7 +12,7 @@ import org.testng.Assert;
 public class HomeService {
 
     public static void isViewLoaded() {
-        MobileActionManager.waitVisibility(HomeConstants.TIME_ENTRIES_TEXT);
+        MobileActionManager.waitVisibility(HomeConstants.HAMBURGER_MENU_DRAWER);
         Assert.assertTrue(MobileActionManager.isVisible(HomeConstants.HAMBURGER_MENU_DRAWER), HomeConstants.VIEW_NOT_DISPLAYED_MESSAGE);
     }
     public static void HamburgerMenu(){
