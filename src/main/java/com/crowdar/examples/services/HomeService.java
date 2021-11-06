@@ -22,6 +22,7 @@ public class HomeService {
         MobileActionManager.click(HomeConstants.SETTINGS_OPTION);
     }
     public static void mode(){
+        MobileActionManager.waitVisibility(HomeConstants.DARK_MODE_TAP);
         MobileActionManager.click(HomeConstants.DARK_MODE_TAP);
     }
     public static void tasks(){

@@ -24,4 +24,10 @@ public class LoginSteps extends PageSteps {
     public void theUserEntersInTheSignUpPageWithEmailPassword(String email, String password) {
     LoginService.doLogin(email, password);
     }
+
+    @io.cucumber.java.en.Given("The user does a successful login")
+    public void theUserDoesASuccessfulLogin() {
+        isLoginPageVisible();
+        theUserEntersInTheSignUpPageWithEmailPassword("lunasauri.ls@gmail.com","3snwyJnznE69A4J");
+    }
 }
