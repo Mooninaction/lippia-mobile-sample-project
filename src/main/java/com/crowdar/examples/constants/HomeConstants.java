@@ -12,7 +12,7 @@ public class HomeConstants {
     public static final String TASKS_OPTION = "id:timeentry_task_section";
     public static final String TASKS_FLOATING_ACTION_BUTTON = "id:floating_action_button";
     public static final String TASKS_INPUT = "id:task_name_text_input";
-    public static final String TASKS_TEXT = "PracticaAPI";
+    public static final String TASKS_TEXT = "PracticaMobile";
     public static final String TASKS_LOAD = "xpath:/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.TextView[3]";
     public static final String TASKS_LOADED = "id:timeentry_selected_task";
     public static final String PROJECT = "id:time_entry_project_client_section";

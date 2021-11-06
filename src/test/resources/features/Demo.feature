@@ -1,11 +1,11 @@
 Feature: As a potential user, I want to interact with the mobile application
-@Smoke
+@Smoke @Luna
   Scenario: The user does a successful login
     Given The app is loaded correctly
     When  The user enters in the Sign Up page with: email "lunasauri.ls@gmail.com", password "3snwyJnznE69A4J"
     Then  Home page is displayed
 
-  @Smoke
+  @Smoke @Luna
   Scenario: The user taps to enable dark mode
     Given The user does a successful login
     When  The user clicks on the Hamburger Menu
