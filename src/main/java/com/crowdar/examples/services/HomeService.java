@@ -26,11 +26,15 @@ public class HomeService {
         MobileActionManager.click(HomeConstants.DARK_MODE_TAP);
     }
     public static void tasks(){
+        MobileActionManager.waitVisibility(HomeConstants.TASKS_OPTION);
         MobileActionManager.click(HomeConstants.TASKS_OPTION);
     }
     public static void uploadsTask(){
+        MobileActionManager.waitVisibility(HomeConstants.TASKS_FLOATING_ACTION_BUTTON);
         MobileActionManager.click(HomeConstants.TASKS_FLOATING_ACTION_BUTTON);
+        MobileActionManager.waitVisibility(HomeConstants.TASKS_INPUT);
         MobileActionManager.setInput(HomeConstants.TASKS_INPUT,HomeConstants.TASKS_TEXT);
+        MobileActionManager.waitVisibility(HomeConstants.TASKS_LOAD);
        MobileActionManager.click(HomeConstants.TASKS_LOAD);
     }
 
@@ -42,10 +46,16 @@ public class HomeService {
     }
 
     public static void TaskLoaded(){
-        MobileActionManager.isVisible(HomeConstants.TASKS_OPTION);
-        String task = MobileActionManager.getElement(HomeConstants.TASKS_LOADED).getText();
-        Assert.assertSame(HomeConstants.TASKS_TEXT, task);
+        MobileActionManager.waitVisibility(HomeConstants.TASKS_LOADED);
+        String task = MobileActionManager
+                .waitVisibility(HomeConstants.TASKS_LOADED)
+                .getText();
+        Assert.assertTrue(task.contains(HomeConstants.TASKS_TEXT));
     }
 
 
+    public static void goProject() {
+        MobileActionManager.waitVisibility(HomeConstants.PROJECT);
+        MobileActionManager.click(HomeConstants.PROJECT);
+    }
 }

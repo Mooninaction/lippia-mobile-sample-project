@@ -1,8 +1,6 @@
 package com.crowdar.examples.steps;
 
 import com.crowdar.core.PageSteps;
-import com.crowdar.core.actions.MobileActionManager;
-import com.crowdar.examples.constants.HomeConstants;
 import com.crowdar.examples.services.HomeService;
 import cucumber.api.java.en.Then;
 import io.cucumber.java.en.And;
@@ -21,6 +19,7 @@ public class HomeSteps extends PageSteps {
 
     @When("The user clicks on the project")
     public void theUserClicksOnTheProject() {
+        HomeService.goProject();
     }
 
     @And("The user clicks on settings")
